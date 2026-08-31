@@ -1,0 +1,10 @@
+- Versão do compilador Java: Java 21
+- IDE e respectiva versão: IntelliJ IDEA 2026.2.0.1
+- Sistema Operacional e sua respectiva versão: Windows 11 25H2
+- Tipo da Biblioteca criada para Calculadora_202121250046: .jar
+
+Descrição dos métodos da classe Calculadora_202121250046:
+- somar(double a, double b): Recebe dois números como parâmetros e retorna o resultado da adição entre eles.
+- subtrair(double a, double b): Recebe dois números como parâmetros e retorna o resultado da subtração do primeiro pelo segundo.
+- multiplicar(double a, double b): Recebe dois números como parâmetros e retorna o produto da multiplicação entre ambos.
+- dividir(double a, double b): Recebe dois números como parâmetros e retorna o resultado da divisão do primeiro pelo segundo. Inclui uma validação para evitar erro de divisão por zero, exibindo uma mensagem no terminal caso o divisor (b) seja igual a zero.# PP26_2
