@@ -1,10 +1,12 @@
-- Versão do compilador Java: Java 21
+- Versão do compilador Java utilizada: Java 25 (atualizado para manter compatibilidade com a biblioteca de terceiros)
 - IDE e respectiva versão: IntelliJ IDEA 2026.2.0.1
 - Sistema Operacional e sua respectiva versão: Windows 11 25H2
-- Tipo da Biblioteca criada para Calculadora_202121250046: .jar
+- Tipo da Biblioteca criada para Calculadora_202121250046: .jar (Implementando o padrão Adapter por Herança)
 
-Descrição dos métodos da classe Calculadora_202121250046:
-- somar(double a, double b): Recebe dois números como parâmetros e retorna o resultado da adição entre eles.
-- subtrair(double a, double b): Recebe dois números como parâmetros e retorna o resultado da subtração do primeiro pelo segundo.
-- multiplicar(double a, double b): Recebe dois números como parâmetros e retorna o produto da multiplicação entre ambos.
-- dividir(double a, double b): Recebe dois números como parâmetros e retorna o resultado da divisão do primeiro pelo segundo. Inclui uma validação para evitar erro de divisão por zero, exibindo uma mensagem no terminal caso o divisor (b) seja igual a zero.# PP26_2
+Descrição de cada um dos métodos da classe Calculadora_202121250046:
+Esta classe atua como um Adapter (por herança), estendendo a funcionalidade da biblioteca externa Calculadora_202321250008. Ela adapta as chamadas locais do Cliente para as assinaturas esperadas pela superclasse.
+
+- double somar(double a, double b): Recebe dois números do tipo double e repassa a execução para o método da superclasse que espera parâmetros variáveis (varargs: double... numeros)[cite: 2]. Retorna um valor do tipo double correspondente à soma.
+- double subtrair(double a, double b): Recebe dois números do tipo double e repassa a execução diretamente para o método equivalente da superclasse[cite: 2]. Retorna um valor do tipo double correspondente ao resultado da subtração de a por b.
+- double multiplicar(double a, double b): Recebe dois números do tipo double e repassa a execução para o método da superclasse que espera parâmetros variáveis (varargs: double... fatores)[cite: 2]. Retorna um valor do tipo double correspondente ao produto.
+- double dividir(double a, double b): Recebe dois números do tipo double e repassa a execução para o método da superclasse (double dividendo, double divisor)[cite: 2]. Retorna um valor do tipo double correspondente à divisão real entre eles.
